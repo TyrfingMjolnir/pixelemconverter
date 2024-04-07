@@ -1,3 +1,14 @@
+" pixelemconverter.vim
+" Maintainer:   Joe Benjamin <https://www.youtube.com/@joebenjamintech>
+" Version:      4 years ago
+
+" Some basic check to see that you are on a certain version of [neo]vi[m] or higher
+if exists('g:pixelemconverter_loaded') || &cp || v:version < 704
+  finish
+endif
+" Setting a flag for this plugin being loaded `echo g:pixelemconverter_loaded` to confirm loaded
+let g:pixelemconverter_loaded = 1
+
 if exists('g:default_pixel_user')
   let g:default_pixel = g:default_pixel_user
 else
